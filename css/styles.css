@@ -43,15 +43,18 @@ p {
 }
 
 /* Класс для обнуления базовых свойств у списков (ul) */
-.list {
-  list-style: none;
+
+ul {
+   list-style: none;
   padding-left: 0px;
   margin: 0px;
 }
 
+
 /* Класс для обнуления базовых свойств у ссылок */
-.link {
-  text-decoration: none;
+
+a {
+    text-decoration: none;
   color: inherit;
 }
 
@@ -85,21 +88,6 @@ body {
   margin-right: auto;
 }
 /* логотип */
-
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
-.page-header .container {
-  display: flex;
-  align-items: center;
-}
-
-.nav-flex {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   color: var(--accent-color);
   text-decoration: none;
@@ -108,18 +96,35 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-nav {
+
+ 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo__header {
   color: var(--logo-text-color);
 }
 
-.nav-flex .logo {
+.header__logo {
   margin-right: 93px;
 }
 
 /* навигация */
 
-.nav.list,
-.nav-button {
+.header__pages,
+.header__button {
   display: flex;
 
   font-weight: 500;
@@ -128,7 +133,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-link {
+.header__link {
   display: block;
   color: var(--title-text-color);
   text-decoration: none;
@@ -136,30 +141,30 @@ body {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link:hover,
-.nav-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-color);
 }
 
-.nav.list .item + .item {
+.header__item + .header__item {
   margin-left: 50px;
 }
 
-.nav.list.contact {
+.header__contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.contact-icon {
+.header__contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.nav.list .nav-button {
+.header__button {
   margin-bottom: 0px;
 }
 
-.nav-button {
+.header__button {
   display: flex;
   align-items: center;
   padding: 32px 0px;
@@ -169,20 +174,20 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-button:hover,
-.nav-button:focus {
+.header__button:hover,
+.header__button:focus {
   color: var(--accent-color);
 }
 
-.nav.list .contact-item + .contact-item {
+.header__contacts-item + .header__contacts-item {
   margin-left: 40px;
 }
 
-.curent {
+.header__link--curent {
   color: var(--accent-color);
   position: relative;
 }
-.curent::after {
+.header__link--curent::after {
   position: absolute;
   bottom: 0px;
   content: '';
