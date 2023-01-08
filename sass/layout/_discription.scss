@@ -1,0 +1,39 @@
+.discription {
+  padding-bottom: 94px;
+
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--discrip-text-bcg);
+    color: var(--alternative-text-color);
+  }
+}
